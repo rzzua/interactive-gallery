@@ -1,0 +1,43 @@
+body {
+    margin: 2%;
+    border: 1px solid black;
+    background-color: #b3b3b3;
+    text-align: center;
+}
+
+#image {
+    line-height: 650px;
+    width: 575px;
+    height: 650px;
+    border: 5px solid black;
+    margin: 0 auto 25px auto;
+    background-color: #8e68ff;
+    background-image: url('');
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    background-size: cover;
+    font-size: 150%;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.preview {
+    width: 15%;
+    border: 5px solid black;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.preview:hover {
+    transform: scale(1.05);
+}
+/* Highlights the image when tabbing through */
+.preview:focus {
+    outline: 5px solid #8e68ff;
+    transform: scale(1.05);
+}
